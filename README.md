@@ -2,10 +2,19 @@
 
 ## Overview
 
-This repository documents a **research-grade SPX risk engine** designed to produce **market regime state**, **conditional volatility**, and **tail-risk diagnostics** using only information available at the decision time.
+This repository documents a **research-grade SPX risk engine** designed to produce
+**market regime state**, **conditional volatility**, and **downside tail-risk diagnostics**
+using only information available at the decision time.
 
-The project is intentionally **risk-first and execution-agnostic**.  
-Downstream decision rules, capital allocation, and trading actions are **out of scope**.
+The project is intentionally **risk-first** and **execution-agnostic**.
+
+The engine is designed to support **trade / no-trade risk gating decisions for
+short-volatility exposure**, while deliberately excluding execution logic.
+
+Downstream decision rules, position sizing, capital allocation, and trading actions
+are **out of scope**.
+
+---
 
 ## Quickstart
 
