@@ -7,6 +7,13 @@ This repository documents a **research-grade SPX risk engine** designed to produ
 The project is intentionally **risk-first and execution-agnostic**.  
 Downstream decision rules, capital allocation, and trading actions are **out of scope**.
 
+## Quickstart
+
+To run the public snapshot locally:
+
+pip install -r requirements.txt
+python "SPX risk snapshot (public).py
+
 ---
 
 ## What This Project Is
