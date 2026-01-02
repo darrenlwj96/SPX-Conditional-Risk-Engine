@@ -1,24 +1,23 @@
-# SPX-regime-risk-model
+# SPX Conditional Risk Engine
 
 ## Overview
 
-This repository documents a **research-grade SPX risk engine** that estimates
-**market regime state**, **conditional volatility**, and **downside tail risk**
-using only information available at the decision time.
+This repository documents a **research-grade SPX conditional risk engine** designed to estimate **volatility-driven risk states**, **conditional volatility**, and **downside tail behavior** using only information available at the time of evaluation.
 
-The engine is **risk-first and execution-agnostic**.
+The engine is **risk-first and execution-agnostic** by design.
 
-It is designed to function as a **trade / no-trade risk gate for short-volatility exposure**.
-Execution logic, position sizing, and strategy rules are intentionally excluded.
+It is intended to serve as an **upstream risk diagnostics layer** that can inform downstream decision frameworks (e.g., whether risk should be taken), while remaining strictly separated from trading logic, execution, and performance evaluation.
 
 ---
 
 ## Quickstart
 
-To run the public snapshot locally:
+To run the public after-close snapshot locally:
 
+```bash
 pip install -r requirements.txt
-python "SPX risk snapshot (public).py
+python "SPX risk snapshot (public).py"
+# SPX-regime-risk-model
 
 ---
 
