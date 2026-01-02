@@ -17,6 +17,9 @@ To run the public after-close snapshot locally:
 ```bash
 pip install -r requirements.txt
 python "SPX risk snapshot (public).py"
+
+---
+
 # SPX-regime-risk-model
 
 ---
